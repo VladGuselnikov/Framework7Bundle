@@ -36,8 +36,6 @@
   "license" : [
     "MIT"
   ],
-  "require" : {
-  },
   "autoload" : {
     "psr-0" : {
       "Vladg\\Framework7Bundle" : ""
