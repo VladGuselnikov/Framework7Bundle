@@ -1,0 +1,54 @@
+{
+  "name" : "vladg/framework7-bundle",
+  "description" : "Symfony bundle for mobile HTML framework for building iOS & Android apps",
+  "type" : "symfony-bundle",
+  "authors" : [{
+    "name" : "Vladislav Guselnikov",
+    "email" : "vladg@superup.me"
+  }],
+  "keywords" : [
+    "mobile",
+    "framework",
+    "ios",
+    "ios 7",
+    "ios7",
+    "ios8",
+    "ios 8",
+    "ios9",
+    "ios 9",
+    "iphone",
+    "ipad",
+    "apple",
+    "phonegap",
+    "native",
+    "touch",
+    "appstore",
+    "app",
+    "f7",
+    "material",
+    "android",
+    "google",
+    "googleplay",
+    "symfony",
+    "bundle",
+    "php"
+  ],
+  "license" : [
+    "MIT"
+  ],
+  "require" : {
+  },
+  "autoload" : {
+    "psr-0" : {
+      "Vladg\\Framework7Bundle" : ""
+    }
+  },
+  "target-dir" : "Vladg/Framework7Bundle",
+  "repositories" : [{
+  }],
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "1.0"
+    }
+  }
+}
