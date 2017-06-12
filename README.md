@@ -57,6 +57,7 @@ Optionally, use the --symlink attribute to create links rather than copies of th
 $ .bin/console assets:install --symlink web
 ```
 Step 4: Usage
+-------------------------
 Refer to the desired files in your HTML template, e.g.
 
 ``` html
