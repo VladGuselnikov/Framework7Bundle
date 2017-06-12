@@ -1,77 +1,43 @@
-Lo-Dash Bundle for Symfony2
+Installation
+============
 
-## Notice
+Step 1: Download the Bundle
+---------------------------
 
-This is a legacy bundle dating back to when javascript packagers such as NPM or Bower didn't exist.
-No further updates to this bundle will be published, so please consider the bundle abandoned.
+Open a command console, enter your project directory and execute the
+following command to download the latest stable version of this bundle:
 
-## Current Version
-
-Lo-Dash v4.17.4
-
-## Installation
-
-### Add bundle to your composer.json file
-
-``` js
-// composer.json
-
-{
-    "require": {
-		// ...
-        "bmatzner/lodash-bundle": "~4.17"
-    }
-}
+```console
+$ composer require vladg/framework7-bundle:@dev
 ```
 
-### Add bundle to your application kernel
+This command requires you to have Composer installed globally, as explained
+in the [installation chapter](https://getcomposer.org/doc/00-intro.md)
+of the Composer documentation.
 
-``` php
+Step 2: Enable the Bundle
+-------------------------
+
+Then, enable the bundle by adding it to the list of registered bundles
+in the `app/AppKernel.php` file of your project:
+
+```php
+<?php
 // app/AppKernel.php
 
-public function registerBundles()
+// ...
+class AppKernel extends Kernel
 {
-    $bundles = array(
+    public function registerBundles()
+    {
+        $bundles = array(
+            // ...
+
+            new  vladg/framework7-bundle:@dev,
+        );
+
         // ...
-        new Bmatzner\LoDashBundle\BmatznerLoDashBundle(),
-        // ...
-    );
+    }
+
+    // ...
 }
-```
-
-### Download the bundle using Composer
-
-``` bash
-$ php composer.phar update bmatzner/lodash-bundle
-```
-
-### Install assets
-
-Given your server's public directory is named "web", install the public vendor resources
-
-``` bash
-$ php app/console assets:install web
-```
-
-Optionally, use the --symlink attribute to create links rather than copies of the resources 
-
-``` bash
-$ php app/console assets:install --symlink web
-```
-
-## Usage
-
-Refer to the desired files in your HTML template, e.g.
-
-``` html
-<script type="text/javascript" src="{{ asset('bundles/bmatznerlodash/js/lodash.min.js') }}"></script>
-```
-
-## Licenses
-
-Refer to the source code of the included files for license information
-
-## References
-
-1. http://lodash.com/
-2. http://symfony.com/
