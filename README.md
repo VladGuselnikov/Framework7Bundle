@@ -33,7 +33,7 @@ class AppKernel extends Kernel
         $bundles = array(
             // ...
 
-            new  vladg/framework7-bundle:@dev,
+            new  Vladg\Framework7Bundle\VladgFramework7Bundle(),
         );
 
         // ...
