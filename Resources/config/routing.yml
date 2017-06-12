@@ -1,3 +1,0 @@
-vladg_framework7_homepage:
-    path:     /
-    defaults: { _controller: VladgFramework7Bundle:Default:index }
