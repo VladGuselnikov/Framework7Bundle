@@ -33,9 +33,7 @@
     "bundle",
     "php"
   ],
-  "license" : [
-    "MIT"
-  ],
+  "license" : "MIT",
   "autoload" : {
     "psr-0" : {
       "Vladg\\Framework7Bundle" : ""
@@ -44,10 +42,5 @@
   "target-dir" : "Vladg/Framework7Bundle",
   "require":     {
         "symfony/framework-bundle": ">=2.1"
-    },
-   "extra" : {
-    "branch-alias" : {
-            "dev-master" : "1.0-dev"
-        }
     }
 }
